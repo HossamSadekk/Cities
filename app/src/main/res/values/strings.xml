@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cities</string>
+    <string name="cities_app">Cities App</string>
 </resources>
