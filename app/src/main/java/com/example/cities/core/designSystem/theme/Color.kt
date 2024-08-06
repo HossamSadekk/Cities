@@ -1,4 +1,4 @@
-package com.example.cities.core.theme
+package com.example.cities.core.designSystem.theme
 
 import androidx.compose.ui.graphics.Color
 
@@ -13,7 +13,7 @@ val Grey22 = Color(0xff36383c)
 val Grey98 = Color(0xfffafafa)
 val Grey96 = Color(0xFFF6F6F6)
 val Grey62 = Color(0xff9e9f9e)
-val DarkGreen15 = Color(0xff154406)
+val DarkOrange15 = Color(0xffc3780c)
 val Grey13 = Color(0xff212121)
 val Red65 = Color(0xFFF55655)
 val Grey38 = Color(0xff626261)
