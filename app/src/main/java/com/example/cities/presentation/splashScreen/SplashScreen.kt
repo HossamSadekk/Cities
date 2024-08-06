@@ -56,7 +56,7 @@ fun SplashScreen(onSplashEnd: () -> Unit) {
     ) {
         Text(
             text = stringResource(R.string.cities_app),
-            color = MaterialTheme.colorScheme.onPrimary,
+            color = MaterialTheme.colorScheme.tertiary,
             fontSize = 30.sp * scale, // Apply animated scale
             style = TextStyle(
                 fontFamily = FontFamily(Font(R.font.poppins_bold)),

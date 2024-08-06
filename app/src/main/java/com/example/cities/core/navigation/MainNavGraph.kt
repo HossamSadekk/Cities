@@ -4,6 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.example.cities.presentation.homeScreen.nav.homeScreen
+import com.example.cities.presentation.homeScreen.nav.navigateToHomeScreen
 import com.example.cities.presentation.splashScreen.nav.splashScreen
 import com.example.cities.presentation.splashScreen.nav.splashScreenRoute
 
@@ -12,6 +14,9 @@ fun MainNavigation(
     navController: NavHostController = rememberNavController(),
 ) {
     NavHost(navController = navController, startDestination = splashScreenRoute) {
-        splashScreen { }
+        splashScreen {
+            navController.navigateToHomeScreen()
+        }
+        homeScreen()
     }
 }

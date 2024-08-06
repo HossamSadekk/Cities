@@ -1,4 +1,4 @@
-package com.example.cities.core.theme
+package com.example.cities.core.designSystem.theme
 
 import android.app.Activity
 import android.os.Build
@@ -19,7 +19,7 @@ import androidx.core.view.WindowCompat
 private val DarkColorScheme = darkColorScheme(
     primary = BlueGrey11,
     secondary = Green54,
-    tertiary = DarkGreen15,
+    tertiary = DarkOrange15,
     background = BlueGrey11,
     onBackground = BlueGrey11,
     onPrimary = Orange,
@@ -34,7 +34,7 @@ private val DarkColorScheme = darkColorScheme(
 private val LightColorScheme = lightColorScheme(
     primary = Orange,
     secondary = Green54,
-    tertiary = DarkGreen15,
+    tertiary = DarkOrange15,
     background = White,
     onBackground = BlueGrey11,
     onPrimary = Orange,
@@ -76,7 +76,7 @@ fun CitiesTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.onPrimary.toArgb()
+            window.statusBarColor = colorScheme.tertiary.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }
