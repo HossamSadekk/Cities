@@ -35,7 +35,7 @@ In Cities, we need to search for cities based on a prefix input by the user. Whi
 
 | Feature                      | Linear Search                               | Trie                                        |
 |------------------------------|---------------------------------------------|---------------------------------------------|
-| **Time Complexity**          | O(n * m)                                    | O(k)                                        |
+| **Time Complexity**          | O(n)                                        | O(k)                                        |
 | **Space Complexity**         | O(n)                                        | O(n * k)                                    |
 | **Search Speed**             | Slower with larger datasets                 | Faster, constant time for prefix search     |
 | **Insertion Speed**          | Fast (simply add to the end of the list)    | Slower (needs to update the Trie structure) |
