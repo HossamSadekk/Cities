@@ -1,12 +1,10 @@
 package com.example.cities.data.model
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import com.google.gson.annotations.SerializedName
 
-@JsonClass(generateAdapter = true)
 data class City(
-    @Json(name = "country") val country: String,
-    @Json(name = "name") val name: String,
-    @Json(name = "_id") val id: Int,
-    @Json(name = "coord") val coord: Coord,
+    @SerializedName("country") val country: String,
+    @SerializedName("name") val name: String,
+    @SerializedName("_id") val id: Int,
+    @SerializedName("coord") val coord: Coord,
 )

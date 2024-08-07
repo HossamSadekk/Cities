@@ -11,9 +11,10 @@ composeBom = "2024.06.00"
 # DI
 koin = "4.0.0-RC1"
 # moshi
-moshi = "1.13.0"
+gson = "2.10.1"
 # navigation
 navigation = "2.7.7"
+# material
 composeMaterial = "1.3.1"
 
 [libraries]
@@ -31,16 +32,15 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "composeMaterial" }
 # DI
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 # converter
-moshi = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 # navigation
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
-androidx-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "composeMaterial" }
-
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
