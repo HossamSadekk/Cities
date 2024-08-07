@@ -68,8 +68,9 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.koin.compose)
     implementation(libs.koin.core)
-    // moshi
-    implementation(libs.moshi)
+    // gson
+    implementation(libs.gson)
     // navigation
     implementation(libs.navigation.compose)
+
 }
