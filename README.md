@@ -33,15 +33,20 @@ In Cities, we need to search for cities based on a prefix input by the user. Whi
 
 ### Comparison Table
 
-| Feature                      | Linear Search                               | Trie                                        |
-|------------------------------|---------------------------------------------|---------------------------------------------|
-| **Time Complexity**          | O(n)                                        | O(k)                                        |
-| **Space Complexity**         | O(n)                                        | O(n * k)                                    |
-| **Search Speed**             | Slower with larger datasets                 | Faster, constant time for prefix search     |
-| **Insertion Speed**          | Fast (simply add to the end of the list)    | Slower (needs to update the Trie structure) |
-| **Memory Usage**             | Lower (depends on the size of the list)     | Higher (requires additional storage for nodes and pointers) |
-| **Implementation Complexity**| Simple and straightforward                  | More complex, requires understanding of Trie structure |
-| **Use Case Suitability**     | Small datasets or infrequent searches       | Large datasets, frequent and fast prefix searches |
+| Comparison Criteria | Linear Search                                 | Trie Search                                    |
+|---------------------|-----------------------------------------------|------------------------------------------------|
+| **Time Complexity** | O(n), where `n` is the size of the data structure | O(k), where `k` is the length of the search key |
+| **Data Structure**  | Works with simple data structures like arrays and lists | Optimized for the trie data structure          |
+| **Use Cases**       | Suitable for small data sets                  | Efficient for large data sets, especially for searching words or prefixes |
+| **Advantages**      | Simple to implement                           | Very fast for searching words or prefixes      |
+| **Disadvantages**   | Slow for large data sets                      | Requires more memory to store the trie structure |
+
+### Summary
+
+- **Linear Search**: Best suited for small datasets due to its simplicity. However, it becomes inefficient with large datasets as it requires scanning each item.
+  
+- **Trie Search**: Ideal for large datasets where prefix searches are frequent. Although it requires more memory to maintain the Trie structure, it provides fast and efficient search operations.
+
 
 </br>
 
