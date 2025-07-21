@@ -62,7 +62,7 @@ fun HomeScreen(viewModel: HomeScreenViewModel = koinViewModel()) {
                 LazyColumn {
                     items(cities) { city ->
                         CityItem(city) { selectedCity ->
-
+                            onCityItemClick(selectedCity, context)
                         }
                     }
                 }
