@@ -78,7 +78,7 @@ fun onCityItemClick(city: City, context: Context) {
     val gmmIntentUri =
         Uri.parse("geo:${city.coord.lat},${city.coord.lon}?q=${city.name},${city.country}")
     val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-    // comment here a
+    // comment here a f
     mapIntent.setPackage("com.google.android.apps.maps")
     if (mapIntent.resolveActivity(context.packageManager) != null) {
         context.startActivity(mapIntent)
